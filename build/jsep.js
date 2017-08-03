@@ -132,7 +132,7 @@
 				gobbleSpaces = function() {
 					var ch = exprICode(index);
 					// space or tab
-					while(ch === 32 || ch === 9) {
+					while(ch === 32 || ch === 9 || ch === 10 || ch === 13) {
 						ch = exprICode(++index);
 					}
 				},
